@@ -13,7 +13,7 @@ jobs:
       language: java
       jdk: oraclejdk8
       before_install:
-        - echo "$TRAVIS_BUILD_DIR"
+        - echo $TRAVIS_BUILD_DIR
         - chmod +x ./gradlew
       install: skip
       script: ./gradlew clean build
